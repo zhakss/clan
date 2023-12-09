@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+body {
+  font-family: 'Poppins', Sans-Serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+.nav .nav-brand {
+  font-weight: bold;
+}
+.nav .nav-list a {
+  text-decoration: none;
+  color: #000;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  margin: 10px auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.hero .image {
+  width: 100px;
+  height: 100px;
+}
+.hero .title {
+  font-weight: bold;
+  font-size: 25px;
+}
+.hero .desc {
+  font-weight: bold;
+  font-size: 23px;
+  color: #bcbcbc;
+}
+.hero .btn {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  width: 100%;
+  padding-top: 25px;
+  margin-bottom: 15px;
+}
+.hero .btn .btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: #008bff;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.hero .btn .btn-default {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  color: #000;
+  font-weight: bold;
+  border: 1px solid;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.about {
+  background-color: #eeee;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.about .title {
+  font-weight: 600;
+  font-size: 23px;
+  width: 80%;
+  margin: 10px auto;
+}
+.about .desc {
+  color: #626262;
+  font-weight: 500;
+  width: 80%;
+  margin: 10px auto;
+}
+.base {
+  width: 80%;
+  margin: 10px auto;
+  padding: 20px;
+}
+.base .title {
+  font-weight: bold;
+  font-size: 23px;
+  padding-bottom: 20px;
+}
+.base .wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+.footer {
+  display: grid;
+  place-items: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #000;
+  opacity: 50%;
+}
+.footer .desc {
+  font-size: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+@media (min-width: 720px) {
+  .hero .btn {
+    width: 50%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .base .wrapper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
